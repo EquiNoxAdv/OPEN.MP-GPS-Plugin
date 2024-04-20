@@ -108,14 +108,6 @@ Include in your code and begin using the library:
 
 * If both of the specified map nodes are valid, returns `GPS_ERROR_NONE` and tries to find a path from `source` to `target` and pass its ID to `pathid`, otherwise returns `GPS_ERROR_INVALID_NODE`. If pathfinding fails, returns `GPS_ERROR_INVALID_PATH`.
 
-`FindPathThreaded(MapNode:source, MapNode:target, const callback[], const format[] = "", {Float, _}:...)`
-
-* If both of the specified map nodes are valid, returns `GPS_ERROR_NONE` and tries to find a path from `source` to `target`. After pathfinding is finished, calls the specified callback and passes the path ID (could be `INVALID_PATH_ID` if pathfinding fails) and the specified arguments to it.
-
-`Task:FindPathAsync(MapNode:source, MapNode:target)`
-
-* Pauses the current function and continues it after it is finished. Throws an AMX error if pathfinding fails for any reason. Only available if PawnPlus is included before GPS. Usage explained below.
-
 `bool:IsValidPath(Path:pathid)`
 
 * Returns if the path with the specified ID is valid.
