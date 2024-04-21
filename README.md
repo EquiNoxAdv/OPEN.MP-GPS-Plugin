@@ -186,7 +186,7 @@ CMD:pathtols(playerid, params[]) {
 
         CreateDynamicPickup(1318, 1, x, y, z);
 
-        printf("%f %f %f", x, y, z;
+        printf("%f %f %f", x, y, z);
     }
 
     DestroyPath(_path);
